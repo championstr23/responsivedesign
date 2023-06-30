@@ -1,7 +1,7 @@
 <!--  El video que le mande a Corque 
 https://youtube.com/watch?v=BOF79TAIkYQ&feature=share8
 -->
-<!-- URL https://www.youtube.com/watch?v=ZdJSHEczi_0 -->
+<!-- MIN 23: 26 URL https://www.youtube.com/watch?v=ZdJSHEczi_0 -->
 
 <!DOCTYPE html>
 <html lang en="en">
@@ -24,6 +24,7 @@ https://youtube.com/watch?v=BOF79TAIkYQ&feature=share8
             <li><a href="#"></a>About</li>
             <li><a class="ctn" href="#"></a>Contact</li>
         </ul>
+        <img src="./img/menu-btn.png" alt="" class="menu-btn">
     </nav>
 
     <header>
@@ -35,5 +36,44 @@ https://youtube.com/watch?v=BOF79TAIkYQ&feature=share8
                 
           </div>
     </header>
+
+    <!-- ========= Events ========== -->
+    <section class="events">
+        <div class="title">
+            <h1>Upcoming Events</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./img/img1.png" alt="">
+                <h4>Everest Camp Trek</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi animi voluptatem incidunt in necessitatibus praesentium, aliquid cupiditate eligendi dolores tempora aspernatur pariatur quibusdam, tempore facere voluptatum, autem obcaecati. Libero, nemo?</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="./img/img2.png" alt="">
+                <h4>Walking Holidays</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi animi voluptatem incidunt in necessitatibus praesentium, aliquid cupiditate eligendi dolores tempora aspernatur pariatur quibusdam, tempore facere voluptatum, autem obcaecati. Libero, nemo?</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== Explore =========== -->
+    <section class="explore">
+        <h1>EXPLORE THE WORLD</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolor id rerum ex, facere placeat libero minima sequi recusandae doloribus eius, praesentium, suscipit ipsum architecto debitis officiis nisi ab. Cumque.</p>
+        <a href="#" class="ctn">Learn More</a>
+    </section>
+
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
 </body>
-</html>
+</html>                 
